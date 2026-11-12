@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #f8f7f3; color: #18231d; font-family: Arial, "Noto Sans Arabic", sans-serif; }
+button, input, textarea { font: inherit; }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #d6a83e; outline-offset: 2px; }
+.card { background: white; border: 1px solid #e8e8df; border-radius: 22px; box-shadow: 0 12px 40px #1835250b; }
+.btn { border-radius: 14px; padding: 12px 18px; font-weight: 700; transition: .2s; }
+.btn-primary { background: #176b46; color: white; }
+.btn-primary:hover { background: #105638; }
+.btn-muted { background: #eef2ed; color: #25392e; }
+.field { width: 100%; border: 1px solid #dce3dc; border-radius: 12px; padding: 12px 14px; background: #fff; }
+@keyframes reveal { 0% { transform: rotateY(90deg) scale(.88); opacity: 0 } 100% { transform: rotateY(0) scale(1); opacity: 1 } }
+.reveal { animation: reveal .7s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-7px) } }
+.float { animation: float 3s ease-in-out infinite; }
